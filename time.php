@@ -2,6 +2,8 @@
 
 class TimeField extends InputField {
 
+    public $override = false;
+
     public function __construct() {
         $this->icon   = 'clock-o';
         $this->format = 24;
@@ -12,11 +14,17 @@ class TimeField extends InputField {
     }
 
     public function value() {
-        if (empty($this->value) || $this->value === 'now') {
+        if ($this->override()) {
+            $value = $this->default();
+        } else {
+            $value = parent::value();
+        }
+
+        if (empty($value) || $value === 'now') {
             return date($this->format(), time());   
         }
 
-        return date($this->format(), strtotime($this->value));
+        return date($this->format(), strtotime($value));
     }
 
     public function maxlength() {
