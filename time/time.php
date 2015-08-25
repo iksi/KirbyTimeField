@@ -11,9 +11,7 @@ class TimeField extends InputField
 
     public function format()
     {
-        return ($this->format === 12)
-            ? 'h:i A'
-            : 'H:i';
+        return ($this->format === 12) ? 'h:i A' : 'H:i';
     }
 
     public function value()
