@@ -1,10 +1,10 @@
-# Kirby custom time field
+# Kirby time field
 
-Custom time form field for kirby that doesn’t use selects. 
+Better time field for kirby that doesn’t use selects but just a regular input field.
 
 ## Installation
 
-`git submodule add https://github.com/iksi/KirbyTimeField.git site/fields/time`  
+`git submodule add https://github.com/iksi/kirby-time-field.git site/fields/time`  
 Or place a `time` folder in `/site/fields` with the repository’s contents.
 
 ## Usage
