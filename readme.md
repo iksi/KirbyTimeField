@@ -5,7 +5,7 @@ Better time field for kirby that doesn’t use selects but just a regular input 
 ## Installation
 
 `git submodule add https://github.com/iksi/kirby-time-field.git site/fields/time`  
-Or place a `time` folder in `/site/fields` with the repository’s contents.
+Or place a `time` folder in `site/fields` with the repository’s contents.
 
 ## Usage
 
