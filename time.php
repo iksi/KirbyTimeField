@@ -29,7 +29,7 @@ class TimeField extends InputField {
   public function validate() {
     $value = $this->value();
 
-    return date($this->format, strtotime($value())) === $value();
+    return date($this->format, strtotime($value)) === $value;
   }
 
 }
